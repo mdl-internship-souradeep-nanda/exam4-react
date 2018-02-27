@@ -1,0 +1,7 @@
+{
+  "login": "http://localhost:8080/login",
+  "fetchQuestions": "http://localhost:8080/fetchQuestions",
+  "getLeaderboard": "http://localhost:8080/getLeaderboard",
+  "postAnswers": "http://localhost:8080/postAnswers",
+  "getSavedState": "http://localhost:8080/getSavedState"
+}
