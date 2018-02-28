@@ -29,16 +29,6 @@ class App extends React.Component {
     <LoginContainer
       onLogin={(username) => {
         axios.post(externals.login, { username });
-
-        // fetch(externals.login, {
-        //   body: JSON.stringify({ username }),
-        //   headers: {
-        //     'content-type': 'application/json',
-        //   },
-        //   method: 'POST',
-        //   mode: 'no-cors',
-        // }).then(res => res.text().then(console.log));
-
         this.setState({
           currentPage: this.PAGES.QUIZ,
           username,
