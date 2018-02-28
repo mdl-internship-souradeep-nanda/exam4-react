@@ -3,8 +3,16 @@
   flex-direction: column;
   align-content: center;
 }
+.QuizContainerButtonWrapper{
+  display: flex;
+}
 .QuizContainerSubmit{
   font-size: 2em;
   margin: auto;
-  flex: 1;
+  
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid black;
+
+  width: 200px;
 }
