@@ -13,15 +13,39 @@ class LoginContainer extends React.Component {
   render() {
     return (
       <div className="LoginContainer" >
-        <input onChange={
-          (evt) => {
-            this.setState({ username: evt.target.value });
-          }
-        }
-        />
-        <button onClick={() => this.props.onLogin(this.state.username)}>
-          LOGIN
-        </button>
+        <div className="LoginContainerCard">
+          <div className="LoginContainerCardLeft">
+            <span className="LoginContainerWelcomeTo">Welcome to</span>
+            <span className="LoginContainerQuizzy">Quizzy!</span>
+          </div>
+          <div className="LoginContainerCardRight">
+            <div className="LoginContainerLoginLabel">
+              Login
+            </div>
+            <div className="LoginContainerInputTextBlock">
+              <div className="LoginContainerInputTextLabel">
+                Username
+              </div>
+              <input
+                className="LoginContainerInputField"
+                onChange={
+                  (evt) => {
+                    this.setState({ username: evt.target.value });
+                  }
+                }
+              />
+            </div>
+            <div className="LoginContainerButtonWrapper">
+              <button
+                className="LoginContainerButton"
+                onClick={() => this.props.onLogin(this.state.username)}
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>);
   }
 }

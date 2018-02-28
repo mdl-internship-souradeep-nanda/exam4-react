@@ -1,0 +1,86 @@
+.LoginContainer{
+  background-color: rgb(24,34,76);
+  flex-grow: 1;
+}
+
+.LoginContainerCard{
+  display: flex;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.LoginContainerCardLeft{
+  background-color: rgb(107,197,240);
+  flex: 1;
+  box-sizing: border-box;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginContainerCardRight{
+  background-color: white;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginContainerWelcomeTo{
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100px;
+  font-weight: 800;
+}
+
+.LoginContainerQuizzy{
+  color: white;
+  flex:1;
+  font-weight: 900;
+}
+
+.LoginContainerLoginLabel{
+  padding: 10%;
+  font-size: 2em;
+  flex: 0.5;
+}
+
+.LoginContainerInputTextBlock{
+  flex: 1;
+}
+
+.LoginContainerInputTextLabel{
+  padding: 10%;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+}
+
+.LoginContainerInputField{
+  width: 80%;
+  margin: 10%;
+  margin-top: 0;
+  flex: 1;
+  font-size: 2em;
+  border: 2px solid black;
+}
+
+.LoginContainerButtonWrapper{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginContainerButton{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+
+  border: 2px solid black;
+}
