@@ -62,7 +62,9 @@ class App extends React.Component {
   )
 
   leaderboardContainerJsx = () => (
-    <LeaderboardContainer />
+    <LeaderboardContainer
+      username={this.state.username}
+    />
   )
 
   render() {
