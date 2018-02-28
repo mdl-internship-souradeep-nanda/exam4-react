@@ -5,7 +5,10 @@ import './Header.css';
 
 const Header = props => (
   <div className="Header" >
-    {props.username.length ? `Hello ${props.username}` : ''}
+    <span>Quizzy</span>
+    <span className="Header-greet">
+      {props.username.length ? `Hello ${props.username}` : ''}
+    </span>
   </div>
 );
 
