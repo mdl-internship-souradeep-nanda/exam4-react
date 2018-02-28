@@ -40,15 +40,27 @@ class LeaderboardContainer extends React.Component {
     const self = this.state.scores.filter(score => (score.username === this.props.username))[0];
     return (
       <div className="LeaderboardContainer" >
-        <div className="LeaderboardContainer-score">
-          Your score: {self ? self.score : 0}/{this.props.totalQuestions}
+        <div className="LeaderboardContainerScoreLabel">
+          Your score:
+        </div>
+        <div className="LeaderboardContainerScore">
+          <span>
+            {self ? self.score : 0}
+          </span>
+          /
+          <small>
+            {this.props.totalQuestions}
+          </small>
+        </div>
+        <div className="LeaderboardCentralLabel">
+          Leaderboard
         </div>
         {this.getAllRows(this.props.username)}
         <button
-          className="LeaderboardContainer-button"
+          className="LeaderboardContainerButton"
           onClick={this.props.backToLogin}
         >
-          Go back
+          Play Again
         </button>
       </div>
     );

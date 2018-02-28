@@ -1,8 +1,10 @@
 .LeaderboardRow{
   background:  rgb(68,199,245);
-  margin: 5%;
-  padding: 5%;
+  margin: 2%;
+  padding: 1%;
   color:white;
+  font-size: 1.4em;
+  border: 2px solid black;
 }
 
 .LeaderboardRow-user{

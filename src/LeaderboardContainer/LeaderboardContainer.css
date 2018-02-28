@@ -1,11 +1,27 @@
-.LeaderboardContainer-score{
+.LeaderboardContainerScoreLabel{
   color: orange;
   font-size: 2em;
   margin: auto;
-  padding: 10%;
+  padding: 2%;
 }
 
-.LeaderboardContainer-button{
+.LeaderboardContainerScore{
   font-size: 3em;
+  padding-left: 2%;
+}
+
+.LeaderboardContainerButton{
+  font-size: 2em;
+  padding: 2%;
   margin: auto;
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.LeaderboardCentralLabel{
+  /* margin: auto; */
+  text-align: center;
+  font-size: 2em;
 }
