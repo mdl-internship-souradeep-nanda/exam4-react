@@ -1,7 +1,7 @@
 .QuestionContainer{
   border: 1px solid black;
   margin: 5%;
-
+  flex: 1;
 }
 .QuestionContainer-header{
   border: 1px solid black;

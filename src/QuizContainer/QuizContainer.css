@@ -1,4 +1,10 @@
-.QuizContainer-submit{
+.QuizContainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.QuizContainerSubmit{
   font-size: 2em;
   margin: auto;
+  flex: 1;
 }

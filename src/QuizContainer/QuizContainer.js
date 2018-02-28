@@ -111,7 +111,7 @@ class QuizContainer extends React.Component {
       <div className="QuizContainer" >
         {questionsJsx}
         <button
-          className="QuizContainer-submit"
+          className="QuizContainerSubmit"
           onClick={this.submitAnswers}
           disabled={!this.allAnswersChecked()}
         >
