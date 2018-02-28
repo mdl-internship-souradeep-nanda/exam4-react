@@ -5,8 +5,8 @@ import './Header.css';
 
 const Header = props => (
   <div className="Header" >
-    <span>Quizzy</span>
-    <span className="Header-greet">
+    <span className="HeaderQuizzy">Quizzy</span>
+    <span className="HeaderGreet">
       {props.username.length ? `Hello ${props.username}` : ''}
     </span>
   </div>
