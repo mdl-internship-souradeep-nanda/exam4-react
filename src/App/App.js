@@ -22,6 +22,7 @@ class App extends React.Component {
       currentPage: this.PAGES.LOGIN,
       username: '',
     };
+    this.totalQuestions = 0;
   }
 
   loginContainerJsx = () => (
@@ -49,6 +50,7 @@ class App extends React.Component {
   quizContainerJsx = () => (
     <QuizContainer
       username={this.state.username}
+      setTotalQuestions={(totalQuestions) => { this.totalQuestions = totalQuestions; }}
       onSubmit={() => {
         this.setState({
           currentPage: this.PAGES.LEADERBOARD,
@@ -60,6 +62,7 @@ class App extends React.Component {
   leaderboardContainerJsx = () => (
     <LeaderboardContainer
       username={this.state.username}
+      totalQuestions={this.totalQuestions}
       backToLogin={
         () => {
           this.setState({

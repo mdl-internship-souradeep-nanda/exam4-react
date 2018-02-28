@@ -41,7 +41,7 @@ class LeaderboardContainer extends React.Component {
     return (
       <div className="LeaderboardContainer" >
         <div className="LeaderboardContainer-score">
-          Your score: {self ? self.score : 0}
+          Your score: {self ? self.score : 0}/{this.props.totalQuestions}
         </div>
         {this.getAllRows(this.props.username)}
         <button
@@ -58,6 +58,7 @@ class LeaderboardContainer extends React.Component {
 LeaderboardContainer.propTypes = {
   username: PropTypes.string.isRequired,
   backToLogin: PropTypes.func.isRequired,
+  totalQuestions: PropTypes.number.isRequired,
 };
 
 export default LeaderboardContainer;

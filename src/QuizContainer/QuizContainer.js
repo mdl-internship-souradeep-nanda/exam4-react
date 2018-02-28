@@ -23,6 +23,7 @@ class QuizContainer extends React.Component {
     axios.get(externals.fetchQuestions)
       .then(questions => this.setState({ questions: questions.data }))
       .then(() => {
+        this.props.setTotalQuestions(this.state.questions.length);
         axios.get(`${externals.getSavedState}?username=${this.props.username}`)
           .then(res => res.data)
           .then(this.reformatFetchedAnswers)
@@ -125,6 +126,7 @@ class QuizContainer extends React.Component {
 QuizContainer.propTypes = {
   username: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  setTotalQuestions: PropTypes.func.isRequired,
 };
 
 export default QuizContainer;
