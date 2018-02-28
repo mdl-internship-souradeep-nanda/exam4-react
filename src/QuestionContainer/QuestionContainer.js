@@ -22,7 +22,7 @@ const getOptionsDiv = (id, options, selected, onCheckedChanged) => options
     const isChecked = option === selected;
     const key = `${option}`;
     return (
-      <div key={key}>
+      <div key={key} className="QuestionContainer-options">
         <input
           type="radio"
           name={`question${id}`}
