@@ -51,7 +51,14 @@ class App extends React.Component {
   )
 
   quizContainerJsx = () => (
-    <QuizContainer />
+    <QuizContainer
+      username={this.state.username}
+      onSubmit={() => {
+        this.setState({
+          currentPage: this.PAGES.LEADERBOARD,
+        });
+      }}
+    />
   )
 
   leaderboardContainerJsx = () => (
@@ -67,7 +74,6 @@ class App extends React.Component {
 
     return (
       <div className="App" >
-        App
         <Header username={this.state.username} />
         {bodyJsx}
       </div>
