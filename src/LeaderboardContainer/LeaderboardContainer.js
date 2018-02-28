@@ -37,9 +37,19 @@ class LeaderboardContainer extends React.Component {
 
   render() {
     // console.log(this.state.scores);
+    const self = this.state.scores.filter(score => (score.username === this.props.username))[0];
     return (
       <div className="LeaderboardContainer" >
+        <div className="LeaderboardContainer-score">
+          Your score: {self ? self.score : 0}
+        </div>
         {this.getAllRows(this.props.username)}
+        <button
+          className="LeaderboardContainer-button"
+          onClick={this.props.backToLogin}
+        >
+          Go back
+        </button>
       </div>
     );
   }
@@ -47,6 +57,7 @@ class LeaderboardContainer extends React.Component {
 
 LeaderboardContainer.propTypes = {
   username: PropTypes.string.isRequired,
+  backToLogin: PropTypes.func.isRequired,
 };
 
 export default LeaderboardContainer;

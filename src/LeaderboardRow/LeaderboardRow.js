@@ -5,8 +5,14 @@ import './LeaderboardRow.css';
 
 const LeaderboardRow = props => (
   <div className="LeaderboardRow" >
-    {props.username} {props.username === props.currentUser ? '<' : ''}
-    {props.score}
+    <span
+      className={`LeaderboardRow-user ${props.username === props.currentUser ? 'selected' : ''}`}
+    >
+      {props.username}
+    </span>
+    <span className="LeaderboardRow-score">
+      {props.score}
+    </span>
   </div>
 );
 

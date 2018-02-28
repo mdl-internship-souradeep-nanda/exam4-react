@@ -1,0 +1,17 @@
+.LeaderboardRow{
+  background:  rgb(68,199,245);
+  margin: 5%;
+  padding: 5%;
+  color:white;
+}
+
+.LeaderboardRow-user{
+}
+
+.LeaderboardRow-score{
+  float: right;
+}
+
+.selected {
+  color: red;
+}

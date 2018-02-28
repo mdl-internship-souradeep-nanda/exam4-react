@@ -1,0 +1,11 @@
+.LeaderboardContainer-score{
+  color: orange;
+  font-size: 2em;
+  margin: auto;
+  padding: 10%;
+}
+
+.LeaderboardContainer-button{
+  font-size: 3em;
+  margin: auto;
+}

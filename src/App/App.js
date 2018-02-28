@@ -60,6 +60,14 @@ class App extends React.Component {
   leaderboardContainerJsx = () => (
     <LeaderboardContainer
       username={this.state.username}
+      backToLogin={
+        () => {
+          this.setState({
+            currentPage: this.PAGES.LOGIN,
+            username: '',
+          });
+        }
+      }
     />
   )
 
