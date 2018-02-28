@@ -1,5 +1,5 @@
 import React from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 import './App.css';
 
@@ -27,20 +27,16 @@ class App extends React.Component {
   loginContainerJsx = () => (
     <LoginContainer
       onLogin={(username) => {
-        // axios({
-        //   method: 'POST',
-        //   url: externals.login,
-        //   crossdomain: true,
-        // });
+        axios.post(externals.login, { username });
 
-        fetch(externals.login, {
-          body: JSON.stringify({ username }),
-          headers: {
-            'content-type': 'application/json',
-          },
-          method: 'POST',
-          mode: 'no-cors',
-        }).then(res => res.text().then(console.log));
+        // fetch(externals.login, {
+        //   body: JSON.stringify({ username }),
+        //   headers: {
+        //     'content-type': 'application/json',
+        //   },
+        //   method: 'POST',
+        //   mode: 'no-cors',
+        // }).then(res => res.text().then(console.log));
 
         this.setState({
           currentPage: this.PAGES.QUIZ,
